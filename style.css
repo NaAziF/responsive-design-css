@@ -1,0 +1,41 @@
+
+.main{
+    display: flex;
+}
+
+p{
+    margin: 2% ;
+
+}
+@media (orientation:portrait) {
+.main{
+       
+
+        width: 100%;
+        flex-direction: column;
+    }
+    .container{
+        margin: 1px;
+        width: 100%;
+        min-height: 100px;
+        background-color: blue;
+        overflow: hidden;
+    }
+}
+@media (orientation:landscape) {
+  .main{
+    
+        width: 100%;
+   flex-direction: row;
+    }
+    .container{
+         margin: 1px;
+        min-height: 300px;
+        max-height: 400px;
+        width: 10%;
+        background-color: rgb(255, 0, 0);
+        overflow: hidden;
+        
+    }
+    
+}
